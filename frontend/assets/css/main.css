@@ -1,0 +1,218 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black; }
+
+.marker {
+  position: absolute;
+  width: 12px;
+  height: 25px;
+  background-image: url(../img/marker.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%; }
+
+.nav-bar {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nav-bar h2 {
+    color: #B2AB00;
+    font-family: "Permanent Marker";
+    font-size: 2em; }
+  .nav-bar .ham {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    cursor: pointer; }
+    .nav-bar .ham .ham__top {
+      position: relative;
+      width: 80%;
+      height: 5px;
+      background-color: #7F00FF;
+      border-radius: 2px; }
+    .nav-bar .ham .ham__mid {
+      width: 80%;
+      height: 5px;
+      background-color: #7F00FF;
+      border-radius: 2px;
+      margin: 10px 0; }
+    .nav-bar .ham .ham__bot {
+      position: relative;
+      width: 80%;
+      height: 5px;
+      background-color: #7F00FF;
+      border-radius: 2px; }
+
+.full-ham {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background-color: #30007F;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  z-index: 100; }
+  .full-ham h2 {
+    font-size: 2em;
+    font-family: "Permanent Marker";
+    color: #B2AB00;
+    cursor: pointer; }
+  .full-ham.active {
+    height: 100vh; }
+
+.map {
+  width: 100%;
+  background-color: black; }
+  .map img {
+    width: 100%; }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #30007F; }
+  .list .show-more {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    color: #B2AB00;
+    font-family: "Permanent Marker"; }
+  .list .expanded-list {
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll; }
+    .list .expanded-list .show-less {
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      color: #B2AB00;
+      font-family: "Permanent Marker"; }
+    .list .expanded-list .expanded-list__tb {
+      font-family: "Encode Sans Condensed";
+      color: #B2AB00; }
+      .list .expanded-list .expanded-list__tb thead tr {
+        font-size: 1.2rem; }
+
+.start-pt-form {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  .start-pt-form .form-back {
+    position: absolute;
+    padding: 25px;
+    font-size: 1.5em;
+    font-family: "Permanent Marker";
+    color: #B2AB00;
+    cursor: pointer; }
+  .start-pt-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #30007F;
+    width: 100%;
+    height: 100%; }
+    .start-pt-form form p {
+      display: inline-block;
+      font-family: "Permanent Marker";
+      color: #B2AB00;
+      font-size: 2em; }
+    .start-pt-form form input[type=text]:focus {
+      outline: 0; }
+    .start-pt-form form .checkboxes label {
+      color: #B2AB00;
+      font-size: 1.2em;
+      font-family: "Encode Sans Condensed"; }
+    .start-pt-form form .checkboxes input[type=checkbox]:focus {
+      outline: 0; }
+
+/*# sourceMappingURL=main.css.map */
