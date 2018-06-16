@@ -1,7 +1,7 @@
 {
-  "name": "circus-starter",
+  "name": "Party Tent!",
   "version": "1.1.0",
-  "description": "A good starting point for new Circus students",
+  "description": "Allow users to set up a place to party at their tent and mark their location on the map.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrissilich/circus-starter.git"
+    "url": "git+https://github.com/taylinlarge/PartyTent/frontend"
   },
-  "author": "Chris Silich",
-  "license": "MIT",
+  "author": "Taylin Large",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/chrissilich/circus-starter/issues"
+    "url": "https://github.com/taylinlarge"
   },
-  "homepage": "https://github.com/chrissilich/circus-starter#readme"
+  "homepage": "https://github.com/taylinlarge"
 }
